@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "jsx": "react-jsx"
   },
+  "include": ["src", "global", "global.d.ts"],
+  "exclude": ["node_modules"],
   "extends": "expo/tsconfig.base"
 }
