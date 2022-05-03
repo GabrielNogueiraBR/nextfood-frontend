@@ -1,7 +1,23 @@
-# 🍽️ NextFood
+# 🍔 NextFood
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est, vel gravida leo euismod id. Ut pharetra et dui eget tincidunt. Pellentesque eros enim, pharetra ut elit ac, tincidunt fringilla leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sagittis turpis libero, sit amet ultrices dolor ullamcorper in. Praesent vitae vulputate leo. Nullam scelerisque risus vel imperdiet efficitur. Fusce felis lorem, venenatis eget suscipit eget, euismod ultricies tortor. Quisque faucibus erat vitae augue molestie, ut volutpat nisi faucibus. Nam id aliquam velit. In nec diam commodo turpis posuere tempus rutrum at lacus. Nunc eu erat risus.
 
+### 💡NextFood Features
+- [x] Application Setup
+- [x] Theme Setup
+- [ ] Loading Page
+- [ ] Welcome Page
+- [ ] Login Page
+- [ ] Restaurant List Page
+- [ ] Home Page
 
+## 📝 Development
+Clone the repository, install the dependencies and start the application.
+
+```bash
+git clone git@github.com:GabrielNogueiraBR/nextfood-frontend.git
+yarn install
+expo start
+```
 
 ## 👨‍👦‍👦 Contributors
 <div align="center">
