@@ -10,7 +10,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est,
 - [ ] Restaurant List Page
 - [ ] Home Page
 
-## 📝 Development
+
+## 💻 Requirements
+- Nodejs LTS release
+- Git
+- Expo CLI
+
+## 📝 Installation
 Clone the repository, install the dependencies and start the application.
 
 ```bash
