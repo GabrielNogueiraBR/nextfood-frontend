@@ -15,6 +15,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est,
 - Nodejs LTS release
 - Git
 - Expo CLI
+- Android device/emulator
 
 ## 📝 Installation
 Clone the repository, install the dependencies and start the application.
