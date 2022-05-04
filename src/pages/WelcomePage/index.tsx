@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Text } from "react-native";
 import { Button } from "../../components/Button";
 
 import {
   ButtonContainer,
+  ButtonIcon,
   CircleBack,
   CircleFront,
   Container,
@@ -34,7 +34,9 @@ export function WelcomePage() {
         </Greetings>
       </GreetingsContainer>
       <ButtonContainer>
-        <Button title="Let’s start" onPress={() => {}} />
+        <Button title="Let’s start" onPress={() => {}} >
+          <ButtonIcon name="chevron-right" />
+        </Button>
       </ButtonContainer>
     </Container>
   );

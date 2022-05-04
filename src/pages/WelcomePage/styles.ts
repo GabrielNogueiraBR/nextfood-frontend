@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 
+import { Feather } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
 
 import LogoSVG from "../../assets/icons/logoTextDark.svg";
@@ -51,7 +52,7 @@ export const Logo = styled(LogoSVG).attrs({
 export const GreetingsContainer = styled.View`
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: ${RFValue(82)}px;
+  margin-bottom: ${RFValue(75)}px;
 `;
 
 export const Title = styled.Text`
@@ -70,5 +71,12 @@ export const Greetings = styled.Text`
 
 export const ButtonContainer = styled.View`
   width: ${RFValue(265)}px;
-  margin-bottom: ${RFValue(87)}px;
+  margin-bottom: ${RFValue(75)}px;
+`;
+
+export const ButtonIcon = styled(Feather)`
+  position: absolute;
+  font-size: ${RFValue(40)}px;
+  color: ${({theme}) => theme.colors.primary};
+  right: ${RFValue(14)}px;
 `;
