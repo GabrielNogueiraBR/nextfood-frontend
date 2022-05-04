@@ -5,7 +5,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est,
 - [x] Application Setup
 - [x] Theme Setup
 - [ ] Loading Page
-- [ ] Welcome Page
+- [x] Welcome Page
 - [ ] Login Page
 - [ ] Restaurant List Page
 - [ ] Home Page
