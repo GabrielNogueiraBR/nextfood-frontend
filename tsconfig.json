@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "jsx": "react-jsx"
+    "strict": true
   },
   "include": ["src", "global", "index.d.ts"],
   "exclude": ["node_modules"],
