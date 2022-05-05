@@ -17,9 +17,9 @@ import { Loading } from "./src/pages/Loading";
 import { WelcomePage } from "./src/pages/WelcomePage";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-  const [logged, setLogged] = useState(false);
-  
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLogged, setIsLogged] = useState(false);
+
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
@@ -27,29 +27,13 @@ export default function App() {
   });
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3 * 1000);
-  }, []);
-
-  if (loading || !fontsLoaded)
-    return (
-      <ThemeProvider theme={theme}>
-        <Loading />
-      </ThemeProvider>
-    );
-
-  if (!logged)
-    return (
-      <ThemeProvider theme={theme}>
-        <WelcomePage />
-      </ThemeProvider>
-    );
+    if (fontsLoaded) setIsLoading(false);
+  }, [fontsLoaded]);
 
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <AppRoutes />
+        <AppRoutes isLoading={isLoading} isLogged={isLogged} />
       </NavigationContainer>
     </ThemeProvider>
   );

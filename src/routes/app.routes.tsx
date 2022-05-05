@@ -1,17 +1,39 @@
 import React from "react";
 
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useTheme } from "styled-components";
 
-const { Navigator, Screen } = createBottomTabNavigator();
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { AvailableRestaurants } from "../pages/AvailableRestaurants";
 import { Home } from "../pages/Home";
+import { Loading } from "../pages/Loading";
+import { WelcomePage } from "../pages/WelcomePage";
+import { Login } from "../pages/Login";
 
-export function AppRoutes() {
+const { Navigator, Screen } = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
+interface AppRoutesProps {
+  isLoading: boolean;
+  isLogged: boolean;
+}
+
+export function AppRoutes({ isLoading, isLogged }: AppRoutesProps) {
   const theme = useTheme();
 
-  return (
+  return isLoading ? (
+    <Loading />
+  ) : !isLogged ? (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="Welcome" component={WelcomePage} />
+      <Stack.Screen name="Login" component={Login} />
+    </Stack.Navigator>
+  ) : (
     <Navigator
       screenOptions={{
         headerShown: false,

@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 
 import { Button } from "../../components/Button";
@@ -16,6 +17,12 @@ import {
 } from "./styles";
 
 export function WelcomePage() {
+  const navigation = useNavigation();
+
+  const handleButtonLetsStart = () => {
+    navigation.navigate("Login" as never);
+  };
+
   return (
     <Container>
       <LogoContainer>
@@ -34,7 +41,7 @@ export function WelcomePage() {
         </Greetings>
       </GreetingsContainer>
       <ButtonContainer>
-        <Button title="Let’s start" onPress={() => {}} >
+        <Button title="Let’s start" onPress={() => handleButtonLetsStart()}>
           <ButtonIcon name="chevron-right" />
         </Button>
       </ButtonContainer>
