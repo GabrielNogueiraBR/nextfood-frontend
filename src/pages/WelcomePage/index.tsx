@@ -41,7 +41,7 @@ export function WelcomePage() {
         </Greetings>
       </GreetingsContainer>
       <ButtonContainer>
-        <Button title="Let’s start" onPress={() => handleButtonLetsStart()}>
+        <Button title="Let’s start" onPress={handleButtonLetsStart}>
           <ButtonIcon name="chevron-right" />
         </Button>
       </ButtonContainer>
