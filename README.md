@@ -4,7 +4,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est,
 ### 💡NextFood Features
 - [x] Application Setup
 - [x] Theme Setup
-- [ ] Loading Page
+- [x] Loading Page
 - [x] Welcome Page
 - [ ] Login Page
 - [ ] Restaurant List Page
