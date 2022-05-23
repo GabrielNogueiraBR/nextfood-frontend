@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida erat est,
 - [x] Theme Setup
 - [x] Loading Page
 - [x] Welcome Page
-- [ ] Login Page
+- [x] Login Page
 - [ ] Restaurant List Page
 - [ ] Home Page
 
