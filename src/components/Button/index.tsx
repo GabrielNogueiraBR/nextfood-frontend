@@ -5,7 +5,7 @@ import { Container, Title, StyledButton } from "./styles";
 
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export function Button({ title, children, ...rest }: ButtonProps) {

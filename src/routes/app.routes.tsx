@@ -10,17 +10,18 @@ import { Home } from "../pages/Home";
 import { Loading } from "../pages/Loading";
 import { WelcomePage } from "../pages/WelcomePage";
 import { Login } from "../pages/Login";
+import { useUser } from "../hooks/useUser";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 interface AppRoutesProps {
   isLoading: boolean;
-  isLogged: boolean;
 }
 
-export function AppRoutes({ isLoading, isLogged }: AppRoutesProps) {
+export function AppRoutes({ isLoading }: AppRoutesProps) {
   const theme = useTheme();
+  const { isLogged } = useUser();
 
   return isLoading ? (
     <Loading />

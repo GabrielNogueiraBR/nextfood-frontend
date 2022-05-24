@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
+import { UserProvider } from "./src/hooks/useUser";
+
 import {
   useFonts,
   Poppins_400Regular,
@@ -18,7 +20,6 @@ import { WelcomePage } from "./src/pages/WelcomePage";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isLogged, setIsLogged] = useState(false);
 
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -33,7 +34,9 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <AppRoutes isLoading={isLoading} isLogged={isLogged} />
+        <UserProvider>
+          <AppRoutes isLoading={isLoading}/>
+        </UserProvider>
       </NavigationContainer>
     </ThemeProvider>
   );
