@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import { UserProvider } from "./src/hooks/useUser";
+import { OrderProvider } from "./src/hooks/useOrder";
 
 import {
   useFonts,
@@ -35,7 +36,9 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <NavigationContainer>
         <UserProvider>
-          <AppRoutes isLoading={isLoading}/>
+          <OrderProvider>
+            <AppRoutes isLoading={isLoading} />
+          </OrderProvider>
         </UserProvider>
       </NavigationContainer>
     </ThemeProvider>

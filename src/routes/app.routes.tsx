@@ -11,6 +11,7 @@ import { Loading } from "../pages/Loading";
 import { WelcomePage } from "../pages/WelcomePage";
 import { Login } from "../pages/Login";
 import { useUser } from "../hooks/useUser";
+import { useOrder } from "../hooks/useOrder";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -21,20 +22,42 @@ interface AppRoutesProps {
 
 export function AppRoutes({ isLoading }: AppRoutesProps) {
   const theme = useTheme();
-  const { isLogged } = useUser();
 
-  return isLoading ? (
-    <Loading />
-  ) : !isLogged ? (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
-      <Stack.Screen name="Welcome" component={WelcomePage} />
-      <Stack.Screen name="Login" component={Login} />
-    </Stack.Navigator>
-  ) : (
+  const { isLogged } = useUser();
+  const { isOpen: isOrderOpen } = useOrder();
+
+  if (isLoading) return <Loading />;
+
+  if (!isLogged) {
+    return (
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen name="Welcome" component={WelcomePage} />
+        <Stack.Screen name="Login" component={Login} />
+      </Stack.Navigator>
+    );
+  }
+
+  if (isLogged && !isOrderOpen) {
+    return (
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen
+          name="available-restaurants"
+          component={AvailableRestaurants}
+        />
+        <Stack.Screen name="qr-code" component={Home} />
+      </Stack.Navigator>
+    );
+  }
+
+  if (isLogged && isOrderOpen) {
     <Navigator
       screenOptions={{
         headerShown: false,
@@ -42,6 +65,6 @@ export function AppRoutes({ isLoading }: AppRoutesProps) {
     >
       <Screen name="available-restaurants" component={AvailableRestaurants} />
       <Screen name="home" component={Home} />
-    </Navigator>
-  );
+    </Navigator>;
+  }
 }
