@@ -1,6 +1,9 @@
 # 🍔 NextFood
-<p> O grande avanço tecnológico que vem acontecendo nos últimos tempos está afetando todas as pessoas direta ou indiretamente, e para os restaurantes não foi diferente. Com isso, é preciso sempre estar se reinventando procurando trazer mais benefícios e comodidade para o estabelecimento e também aos consumidores, inserindo a tecnologia nos processos que forem possíveis de se automatizar.</p>
-<p> A partir deste contexto nasceu a ideia de criar o aplicativo NextFood, projeto que visa atender inicialmente pequenos e médios restaurantes ao padrão globalizado e com informação acessível em aparelhos mobile, e capaz de deixar um restaurante tradicional no mesmo patamar dos gigantes desse setor. Focando em uma utilização simples e direta integrando cada vez mais o cliente com o estabelecimento, possibilitando que aquele gerencie seus pedidos, através de um cardápio e comanda online, enquanto estiver presente no restaurante. Trazendo consequentemente tempo e agilidade para ambos.</p>
+
+<div align="justify">
+<p>O grande avanço tecnológico que vem acontecendo nos últimos tempos está afetando todas as pessoas direta ou indiretamente, e para os restaurantes não foi diferente. Com isso, é preciso sempre estar se reinventando procurando trazer mais benefícios e comodidade para o estabelecimento e também aos consumidores, inserindo a tecnologia nos processos que forem possíveis de se automatizar.</p>
+<p>A partir deste contexto nasceu a ideia de criar o aplicativo NextFood, projeto que visa atender inicialmente pequenos e médios restaurantes ao padrão globalizado e com informação acessível em aparelhos mobile, e capaz de deixar um restaurante tradicional no mesmo patamar dos gigantes desse setor. Focando em uma utilização simples e direta integrando cada vez mais o cliente com o estabelecimento, possibilitando que aquele gerencie seus pedidos, através de um cardápio e comanda online, enquanto estiver presente no restaurante. Trazendo consequentemente tempo e agilidade para ambos.</p>
+</div>
 
 ### 💡NextFood Features
 - [x] Application Setup
