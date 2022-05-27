@@ -1,10 +1,18 @@
 import React from "react";
 
-import { Text } from "react-native";
+import { TextInput } from "react-native-gesture-handler";
 
-export function AvailableRestaurants(){
+import { Container, ContentContainer, SearchContainer, Title } from "./styles";
 
-  return(
-    <Text>Available restaurants</Text>
-  )
+export function AvailableRestaurants() {
+  return (
+    <Container>
+      <SearchContainer>
+        <TextInput placeholder="Search" />
+      </SearchContainer>
+      <ContentContainer>
+        <Title>Available restaurants</Title>
+      </ContentContainer>
+    </Container>
+  );
 }

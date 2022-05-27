@@ -26,8 +26,11 @@ export function AppRoutes({ isLoading }: AppRoutesProps) {
   const { isLogged } = useUser();
   const { isOpen: isOrderOpen } = useOrder();
 
+  
   if (isLoading) return <Loading />;
-
+  
+  return <AvailableRestaurants />
+  
   if (!isLogged) {
     return (
       <Stack.Navigator
