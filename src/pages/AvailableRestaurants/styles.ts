@@ -1,6 +1,8 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
+import { Feather } from "@expo/vector-icons";
+
 export const Container = styled.View`
   flex: 1;
   flex-direction: column;
@@ -9,17 +11,38 @@ export const Container = styled.View`
 `;
 
 export const SearchContainer = styled.View`
-  padding: ${RFValue(12)}px;
-  font-size: ${RFValue(14)}px;
+  width: 100%;
 
-  width: ${RFValue(327)}px;
-  height: ${RFValue(48)}px;
+  margin-top: ${RFValue(36)}px;
+  padding-left: ${RFValue(25)}px;
+  padding-right: ${RFValue(25)}px;
+`;
+
+export const Search = styled.View`
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 
   border-width: ${RFValue(1)}px;
   border-radius: ${RFValue(10)}px;
   border-color: ${({ theme }) => theme.colors.secondary};
+`;
 
-  margin-top: ${RFValue(36)}px;
+export const Icon = styled(Feather)`
+  font-size: ${RFValue(18)}px;
+  margin: 0;
+  padding: 0;
+
+  margin-left: ${RFValue(12)}px;
+`;
+
+export const Input = styled.TextInput`
+  font-size: ${RFValue(14)}px;
+  padding: ${RFValue(12)}px;
+
+  height: ${RFValue(48)}px;
 `;
 
 export const ContentContainer = styled.View`
