@@ -2,13 +2,24 @@ import React from "react";
 
 import { TextInput } from "react-native-gesture-handler";
 
-import { Container, ContentContainer, SearchContainer, Title } from "./styles";
+import {
+  Container,
+  ContentContainer,
+  Icon,
+  Input,
+  Search,
+  SearchContainer,
+  Title,
+} from "./styles";
 
 export function AvailableRestaurants() {
   return (
     <Container>
       <SearchContainer>
-        <TextInput placeholder="Search" />
+        <Search>
+          <Icon name="search" />
+          <Input placeholder="Search" />
+        </Search>
       </SearchContainer>
       <ContentContainer>
         <Title>Available restaurants</Title>
