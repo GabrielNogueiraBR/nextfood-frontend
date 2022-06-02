@@ -39,29 +39,33 @@ export function AvailableRestaurants() {
         name: "Restaurant Name 1",
         place: "Place",
         categories: [
-          { name: "burger", icon: "hamburger", active: true },
-          { name: "burger", icon: "pizza-slice", active: true },
+          { id: "1", name: "burger", icon: "hamburger", active: true },
+          { id: "2", name: "burger", icon: "pizza-slice", active: true },
         ],
       },
       {
         id: "6789",
         name: "Restaurant Name 2",
         place: "Place",
-        categories: [{ name: "burger", icon: "hamburger", active: true }],
+        categories: [
+          { id: "3", name: "burger", icon: "hamburger", active: true },
+        ],
       },
       {
         id: "101112",
         name: "Restaurant Name 3",
         place: "Place",
-        categories: [{ name: "burger", icon: "pizza-slice", active: true }],
+        categories: [
+          { id: "4", name: "burger", icon: "pizza-slice", active: true },
+        ],
       },
       {
         id: "131415",
         name: "Restaurant Name 4",
         place: "Place",
         categories: [
-          { name: "burger", icon: "hamburger", active: true },
-          { name: "burger", icon: "pizza-slice", active: true },
+          { id: "5", name: "burger", icon: "hamburger", active: true },
+          { id: "6", name: "burger", icon: "pizza-slice", active: true },
         ],
       },
       {
@@ -69,8 +73,8 @@ export function AvailableRestaurants() {
         name: "Restaurant Name 5",
         place: "Place",
         categories: [
-          { name: "burger", icon: "hamburger", active: true },
-          { name: "burger", icon: "pizza-slice", active: true },
+          { id: "7", name: "burger", icon: "hamburger", active: true },
+          { id: "8", name: "burger", icon: "pizza-slice", active: true },
         ],
       },
       {
@@ -78,8 +82,8 @@ export function AvailableRestaurants() {
         name: "Restaurant Name 6",
         place: "Place",
         categories: [
-          { name: "burger", icon: "hamburger", active: true },
-          { name: "burger", icon: "pizza-slice", active: true },
+          { id: "9", name: "burger", icon: "hamburger", active: true },
+          { id: "10", name: "burger", icon: "pizza-slice", active: true },
         ],
       },
     ]);

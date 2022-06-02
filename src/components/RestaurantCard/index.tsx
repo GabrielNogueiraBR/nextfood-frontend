@@ -43,7 +43,11 @@ export function RestaurantCard({
           <RestaurantPlace>{place}</RestaurantPlace>
           <CategoriesContainer>
             {categories.map((category) => (
-              <CategoryIcon id={category.name} name={category.icon} />
+              <CategoryIcon
+                id={category.name}
+                name={category.icon}
+                key={category.id}
+              />
             ))}
           </CategoriesContainer>
         </ContentContainer>
