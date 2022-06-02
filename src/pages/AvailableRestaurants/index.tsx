@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "../../components/Button";
 
 import {
   RestaurantCard,
   RestaurantCardProps,
 } from "../../components/RestaurantCard";
+import theme from "../../global/styles/theme";
 
 import Restaurant from "../../global/types/Restaurant";
 
 import {
+  ButtonContainer,
+  ButtonIcon,
   Container,
   ContentContainer,
   Icon,
@@ -97,6 +101,11 @@ export function AvailableRestaurants() {
           />
         </Restaurants>
       </ContentContainer>
+      <ButtonContainer>
+        <Button title="Start Order" titleColor={theme.colors.shape}>
+          <ButtonIcon name="qrcode" />
+        </Button>
+      </ButtonContainer>
     </Container>
   );
 }

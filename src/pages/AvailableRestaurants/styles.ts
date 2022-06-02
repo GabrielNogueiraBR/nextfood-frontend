@@ -1,7 +1,7 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
-import { Feather } from "@expo/vector-icons";
+import { Feather, FontAwesome5 } from "@expo/vector-icons";
 import { FlatList, FlatListProps } from "react-native";
 import { DataListProps } from ".";
 
@@ -33,7 +33,7 @@ export const Search = styled.View`
 `;
 
 export const Icon = styled(Feather)`
-  font-size: ${RFValue(18)}px;
+  font-size: ${RFValue(24)}px;
   margin: 0;
   padding: 0;
 
@@ -41,7 +41,7 @@ export const Icon = styled(Feather)`
 `;
 
 export const Input = styled.TextInput`
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(18)}px;
   padding: ${RFValue(12)}px;
 
   height: ${RFValue(48)}px;
@@ -81,3 +81,16 @@ export const RestaurantList = styled(
 ).attrs({
   showsVerticalScrollIndicator: false,
 })``;
+
+export const ButtonContainer = styled.View`
+  width: 100%;
+  padding: 0 ${RFValue(55)}px ${RFValue(23)}px ${RFValue(55)}px;
+`;
+
+export const ButtonIcon = styled(FontAwesome5)`
+  position: absolute;
+  font-size: ${RFValue(23)}px;
+  color: ${({ theme }) => theme.colors.shape};
+
+  right: ${RFValue(16)}px;
+`;
