@@ -2,6 +2,8 @@ import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 import { Feather } from "@expo/vector-icons";
+import { FlatList, FlatListProps } from "react-native";
+import { DataListProps } from ".";
 
 export const Container = styled.View`
   flex: 1;
@@ -46,15 +48,36 @@ export const Input = styled.TextInput`
 `;
 
 export const ContentContainer = styled.View`
+  flex: 1;
   width: 100%;
-  margin-top: ${RFValue(36)}px;
-  margin-left: ${RFValue(23)}px;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+  margin-top: ${RFValue(36)}px;
 `;
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.medium};
   font-size: ${RFValue(26)}px;
-  color: ${({ theme }) => theme.colors.title};
   text-align: left;
+
+  margin-left: ${RFValue(18)}px;
+  color: ${({ theme }) => theme.colors.title};
 `;
+
+export const Restaurants = styled.View`
+  flex: 1;
+  width: 100%;
+  padding: 0 ${RFValue(14)}px;
+`;
+
+export const RestaurantList = styled(
+  FlatList as new (
+    props: FlatListProps<DataListProps>
+  ) => FlatList<DataListProps>
+).attrs({
+  showsVerticalScrollIndicator: false,
+})``;
