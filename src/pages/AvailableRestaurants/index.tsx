@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Text } from "react-native";
 
-import { FlatList, TextInput } from "react-native-gesture-handler";
 import {
   RestaurantCard,
   RestaurantCardProps,
