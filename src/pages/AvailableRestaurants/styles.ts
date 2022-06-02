@@ -84,7 +84,7 @@ export const RestaurantList = styled(
 
 export const ButtonContainer = styled.View`
   width: 100%;
-  padding: 0 ${RFValue(55)}px ${RFValue(23)}px ${RFValue(55)}px;
+  padding: ${RFValue(23)}px ${RFValue(55)}px;
 `;
 
 export const ButtonIcon = styled(FontAwesome5)`

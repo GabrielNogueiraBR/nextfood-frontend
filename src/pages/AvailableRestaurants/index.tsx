@@ -73,6 +73,15 @@ export function AvailableRestaurants() {
           { name: "burger", icon: "pizza-slice", active: true },
         ],
       },
+      {
+        id: "192021",
+        name: "Restaurant Name 6",
+        place: "Place",
+        categories: [
+          { name: "burger", icon: "hamburger", active: true },
+          { name: "burger", icon: "pizza-slice", active: true },
+        ],
+      },
     ]);
   }, []);
 
@@ -96,6 +105,7 @@ export function AvailableRestaurants() {
                 name={item.name}
                 place={item.place}
                 categories={item.categories}
+                key={item.id}
               />
             )}
           />
