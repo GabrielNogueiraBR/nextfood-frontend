@@ -1,6 +1,10 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 
+interface TextCustomProps {
+  color?: string;
+}
+
 export const Container = styled.View`
   width: 100%;
   flex-direction: row;
@@ -20,10 +24,10 @@ export const StyledButton = styled.TouchableOpacity`
   align-items: center;
 `;
 
-export const Title = styled.Text`
+export const Title = styled.Text<TextCustomProps>`
   font-family: ${({ theme }) => theme.fonts.medium};
   font-size: ${RFValue(18)}px;
   line-height: ${RFValue(21)}px;
 
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme, color }) => (color ? color : theme.colors.primary)};
 `;
