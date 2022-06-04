@@ -11,7 +11,8 @@
 - [x] Loading Page
 - [x] Welcome Page
 - [x] Login Page
-- [ ] Restaurant List Page
+- [x] Restaurant List Page
+- [ ] QRCode Scan Page
 - [ ] Home Page
 - [ ] Cart and Order Status Page
 - [ ] Order Checkout Page
