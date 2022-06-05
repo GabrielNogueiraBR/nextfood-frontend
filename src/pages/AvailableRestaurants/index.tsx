@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React, { useEffect, useState } from "react";
 import { Button } from "../../components/Button";
 
@@ -28,9 +29,15 @@ export interface DataListProps extends RestaurantCardProps {
 }
 
 export function AvailableRestaurants() {
+
   const [restaurants, setRestaurants] = useState<Restaurant[]>(
     [] as Restaurant[]
   );
+
+  const navigation = useNavigation();
+  const handleButtonStartOrder = () => {
+    navigation.navigate("qrcode-page" as never);
+  };
 
   useEffect(() => {
     setRestaurants([
@@ -116,7 +123,7 @@ export function AvailableRestaurants() {
         </Restaurants>
       </ContentContainer>
       <ButtonContainer>
-        <Button title="Start Order" titleColor={theme.colors.shape}>
+        <Button title="Start Order" titleColor={theme.colors.shape} onPress={ handleButtonStartOrder }>
           <ButtonIcon name="qrcode" />
         </Button>
       </ButtonContainer>
