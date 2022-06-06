@@ -12,6 +12,7 @@ import { WelcomePage } from "../pages/WelcomePage";
 import { Login } from "../pages/Login";
 import { useUser } from "../hooks/useUser";
 import { useOrder } from "../hooks/useOrder";
+import { QrCodePage } from "../pages/QrCodePage";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -52,7 +53,7 @@ export function AppRoutes({ isLoading }: AppRoutesProps) {
           name="available-restaurants"
           component={AvailableRestaurants}
         />
-        <Stack.Screen name="qr-code" component={Home} />
+        <Stack.Screen name="qrcode-page" component={QrCodePage} />
       </Stack.Navigator>
     );
   }
