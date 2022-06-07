@@ -12,7 +12,7 @@
 - [x] Welcome Page
 - [x] Login Page
 - [x] Restaurant List Page
-- [ ] QRCode Scan Page
+- [x] QRCode Scan Page
 - [ ] Home Page
 - [ ] Cart and Order Status Page
 - [ ] Order Checkout Page
