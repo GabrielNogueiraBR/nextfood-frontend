@@ -1,6 +1,6 @@
 {
   "name": "nextfood",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
@@ -19,6 +19,7 @@
     "expo-font": "~10.0.4",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
+    "expo-updates": "~0.11.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-hook-form": "^7.30.0",

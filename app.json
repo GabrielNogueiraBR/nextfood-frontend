@@ -1,10 +1,17 @@
 {
   "expo": {
-    "name": "nextfood",
+    "name": "Nextfood",
+    "icon": "src/assets/img/app-icon.png",
     "slug": "nextfood",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.nextfood"
+    },
+    "ios": {
+      "bundleIdentifier": "com.nextfood"
+    }
   }
 }
