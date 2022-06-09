@@ -123,20 +123,60 @@ pagamento ao garçom.
 </div>
 
 ## 💻 Requirements
-- Nodejs LTS release
-- Git
-- Expo CLI
-- Android device/emulator
 
-## 📝 Installation
+1. Certifique-se de que o **Node JS** esteja instalado em sua máquina executando o comando:
+```bash
+node -v
+```
+
+2. Se você não instalou o **Node JS**, use o link a seguir para baixar a versão 16.x e instalá-lo: [Download NodeJS](https://nodejs.org/en/)
+
+3. Para rodar a aplicação de forma nativa tanto em um emulador quanto no prório dispotivo, é necessário a instalação do `expo`
+```bash
+npm install --global expo-cli
+```
+
+4. [Opcional]
+
+## 📝 Local Setup
 Clone the repository, install the dependencies and start the application.
 
 ```bash
-git clone git@github.com:GabrielNogueiraBR/nextfood-frontend.git
+git clone https://github.com/GabrielNogueiraBR/nextfood-frontend.git
 yarn install
 expo start
 ```
+1. Clone o [repository](https://github.com/GabrielNogueiraBR/nextfood-frontend.git) 
+`git clone https://github.com/GabrielNogueiraBR/nextfood-frontend.git`
 
+2. Instale as dependências:
+```sh
+npm i
+```
+
+3. Se tudo foi configurado corretamente, você pode executar o aplicativo com o comando:
+```sh
+expo start
+```
+4. <b>(*Opcional)*</b> Instalar o Android Studio para e configurar um dispositivo virtual 
+    - Instale o  [Android Studio](https://developer.android.com/studio)
+    - Vá para o gerenciador de dispositivos virtuais<br> 
+    <img src="https://user-images.githubusercontent.com/42502534/172842114-1c5ccfb2-35b1-4604-8d1e-e98858ce2b30.png" width="50%">
+    - Crie um dispostivo virtual, através do botão **Create device**<br>
+    <img src="https://user-images.githubusercontent.com/42502534/172842117-f7116990-af20-4296-b649-903b8e7c572a.png" width="50%">
+    - O modelo do dispotivo virtual utilizado no desenvolvimento do aplicativo foi o **Pixel 5**
+    <img src="https://user-images.githubusercontent.com/42502534/172842107-99d74b19-477d-4283-9152-c449bd176bb5.png" width="50%">
+    - A imagem do sistema utilizada foi a **R** de nível de API igual à 30
+    <img src="https://user-images.githubusercontent.com/42502534/172842110-1c45a23c-81aa-4fb8-a603-a9243ec33e5e.png" width="50%">
+    - Por ultimo, verifique se as opções estão de acordo, e finalize a criação do dispositivo virtual
+    <img src="https://user-images.githubusercontent.com/42502534/172842111-5b3f5117-1a40-4fa3-a205-d016d5c0f90f.png" width="50%">
+    - Após a criação do dispositivo virtual, poderá ser iniciado através do gerenciador de dispositivos a partir do botão em destaque<br>
+    <img src="https://user-images.githubusercontent.com/42502534/172846473-2faf34a1-9bf8-4edc-bf52-c620a6b0d377.png" width="50%">
+    
+## ⚡  App on your phone
+- Está disponivel também o **apk** do aplicativo, que pode ser feito o download através da pagina de [Releases](https://github.com/GabrielNogueiraBR/nextfood-frontend/releases) do repositório
+- Com o download do apk feito, poderá ser feito a instalação no prórpio dispositivo para teste das funcionalidades
+    
 ## 👨‍👦‍👦 Contributors
 <div align="center">
  <a href="https://github.com/gferrazz" target="_blank"><img src="https://avatars.githubusercontent.com/u/48798017?v=4" width="8%"></a>
