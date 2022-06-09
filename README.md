@@ -136,8 +136,6 @@ node -v
 npm install --global expo-cli
 ```
 
-4. [Opcional]
-
 ## 📝 Local Setup
 Clone the repository, install the dependencies and start the application.
 
@@ -161,22 +159,22 @@ expo start
 4. <b>(*Opcional)*</b> Instalar o Android Studio para e configurar um dispositivo virtual 
     - Instale o  [Android Studio](https://developer.android.com/studio)
     - Vá para o gerenciador de dispositivos virtuais
-    <img src="https://user-images.githubusercontent.com/42502534/172842114-1c5ccfb2-35b1-4604-8d1e-e98858ce2b30.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172842114-1c5ccfb2-35b1-4604-8d1e-e98858ce2b30.png" width="50%"></div>
      
     - Crie um dispostivo virtual, através do botão **Create device**
-    <img src="https://user-images.githubusercontent.com/42502534/172842117-f7116990-af20-4296-b649-903b8e7c572a.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172842117-f7116990-af20-4296-b649-903b8e7c572a.png" width="50%"></div>
     
     - O modelo do dispotivo virtual utilizado no desenvolvimento do aplicativo foi o **Pixel 5**
-    <img src="https://user-images.githubusercontent.com/42502534/172842107-99d74b19-477d-4283-9152-c449bd176bb5.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172842107-99d74b19-477d-4283-9152-c449bd176bb5.png" width="50%"></div>
     
     - A imagem do sistema utilizada foi a **R** de nível de API igual à 30
-    <img src="https://user-images.githubusercontent.com/42502534/172842110-1c45a23c-81aa-4fb8-a603-a9243ec33e5e.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172842110-1c45a23c-81aa-4fb8-a603-a9243ec33e5e.png" width="50%"></div>
     
     - Por ultimo, verifique se as opções estão de acordo, e finalize a criação do dispositivo virtual
-    <img src="https://user-images.githubusercontent.com/42502534/172842111-5b3f5117-1a40-4fa3-a205-d016d5c0f90f.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172842111-5b3f5117-1a40-4fa3-a205-d016d5c0f90f.png" width="50%"></div>
     
     - Após a criação do dispositivo virtual, poderá ser iniciado através do gerenciador de dispositivos a partir do botão em destaque<br>
-    <img src="https://user-images.githubusercontent.com/42502534/172846473-2faf34a1-9bf8-4edc-bf52-c620a6b0d377.png" width="50%">
+    <div align="center"><img src="https://user-images.githubusercontent.com/42502534/172846473-2faf34a1-9bf8-4edc-bf52-c620a6b0d377.png" width="50%"></div>
     
 ## ⚡  App on your phone
 - Está disponivel também o **apk** do aplicativo, que pode ser feito o download através da pagina de [Releases](https://github.com/GabrielNogueiraBR/nextfood-frontend/releases) do repositório
